@@ -44,7 +44,7 @@ This script connects to the poetsDB MongoDB, fetches it into a Panda DataFrame t
 - `poetDB.json`
 
 ### Description
-Open the mongo csv file in Excel and manually merge the data from the manifold Excel file. Run this script to convert the Excel file in a json file that will be imported into MongoDB.
+Open the mongo csv file in Excel and manually merge the data from the manifold Excel file. Then run this script to convert the Excel file into a json file that will be imported into MongoDB.
 
 ### Run the Script
 `python convert_excel_to_json.py`
@@ -52,7 +52,7 @@ Open the mongo csv file in Excel and manually merge the data from the manifold E
 ## Import poetsDB.json to MongoDB
 
 ### Description
-This command imports the new .json file into MongoDB
+This command imports the new `poetDB.json` file into MongoDB
 
 ### Terminal command line
 `mongoimport --uri "mongodb_uri" --collection Poet --type json --file poetDB.json --verbose`
